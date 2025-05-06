@@ -1,0 +1,27 @@
+{
+  // "extends": "../../tsconfig.base.json", // Consider creating a base config later
+  "compilerOptions": {
+    "jsx": "react-native", // Ensure JSX is set correctly
+    "target": "es6", // Specify target ECMAScript version
+    "module": "commonjs", // Specify module code generation
+    "lib": ["es6"], // Include standard library files
+    "allowJs": true,
+    "esModuleInterop": true, // Enable compatibility between CommonJS and ES modules
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node", // Specify module resolution strategy
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true, // Set to false if you want to build this package separately
+
+    /* Output options if building separately */
+    // "outDir": "dist",
+    // "declaration": true,
+    // "declarationMap": true,
+    // "sourceMap": true,
+    // "rootDir": "src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+} 

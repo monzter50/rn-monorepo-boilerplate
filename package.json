@@ -1,0 +1,25 @@
+{
+  "name": "rn-monorepo-boilerplate-root",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "yarn@1.22.1",
+  "workspaces": [
+    "example",
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "yarn install",
+    "android": "turbo run android --filter=example...",
+    "ios": "turbo run ios --filter=example...",
+    "start": "turbo run start --filter=example...",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.2"
+  },
+  "resolutions": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  }
+}
